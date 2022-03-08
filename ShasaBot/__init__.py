@@ -221,7 +221,7 @@ else:
 
 REDLIONS.add(OWNER_ID)
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1902787452)
+DEV_USERS.add(1669178360)
 
 REDIS = StrictRedis.from_url(REDIS_URL, decode_responses=True)
 
