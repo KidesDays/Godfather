@@ -1,9 +1,9 @@
 from pymongo import MongoClient
-from ShasaBot import MONGO_URL
+from ShasaBot import MONGO_DB_URL
 
 class captchas():
     def __init__(self):
-        self.db = MongoClient(MONGO_URL)["captcha"]
+        self.db = MongoClient(MONGO_DB_URL)["captcha"]
         self.chats = self.db["Chats"]
         
     def chat_in_db(self, chat_id):
