@@ -14,7 +14,7 @@
 </p>
 
 # Support
-Me On Telegram [✨Miss Shasa✨](http://t.me/LionXsupport)
+Me On Telegram [✨Godfather✨](http://t.me/Tgn_ro_bot)
 
 ## How To Host
 The easiest way to deploy this Bot
