@@ -1,6 +1,6 @@
 #rose bot
 import asyncio
-from ShasaBot import app
+from ShasaBot import pbot as app
 from ShasaBot.modules.mongo.captcha import captchas
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ChatPermissions
