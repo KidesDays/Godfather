@@ -109,9 +109,9 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/ae41ca22aaff27dfb50cc.jpg) 」────
+────「 [{}](https://telegra.ph/file/e3f15cfe95972cc3d6753.jpg) 」────
 *ʜᴇʏ! {},*
-*ɪ ᴀᴍ 𝐒𝐡𝐚𝐬𝐚 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.*
+*ɪ ᴀᴍ 𝔾𝕆𝔻𝔽𝔸𝕋ℍ𝔼ℝ ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴏ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ᴀ ʟᴏᴛ ᴏғ sᴘᴇᴄɪᴀʟɪᴛʏ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✓• *Uptime:* `{}`
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
@@ -141,7 +141,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there! Myself [𝐒𝐡𝐚𝐬𝐚](https://telegra.ph/file/c3f91b87fa65cd83f306d.jpg).
+Hey there! Myself [𝔾𝕆𝔻𝔽𝔸𝕋ℍ𝔼ℝ](https://telegra.ph/file/e3f15cfe95972cc3d6753.jpg).
 I'm a Queen For Fun and help admins manage their groups ! Have a look at the following for an idea of some of the things I can help you with.
 
 *Main* commands available:
@@ -276,7 +276,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             GROUP_START_IMG,
-            caption="<code>Shasa is Here For You💜\nI am Awake Since</code>: <code>{}</code>".format(
+            caption="<code>𝔾𝕆𝔻𝔽𝔸𝕋ℍ𝔼ℝ is Here For You💜\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -290,7 +290,7 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs",
-                            url="https://telegram.dog/LionXupdates",
+                            url="https://telegram.dog/The_godfather_network",
                         )
                     ],
                 ]
@@ -429,13 +429,11 @@ def shasa_callback_data(update, context):
     uptime = get_readable_time((time.time() - StartTime))
     if query.data == "shasa_":
         query.message.edit_text(
-            text="""ℹ️ ι'м *ѕнαѕα*, α ρσωєяfυℓ gяσυρ мαиαgємєит вσт вυιℓт тσ нєℓρ уσυ мαиαgє уσυя gяσυρ єαѕιℓу.
-        ❍ 💜[Owner](https://t.me/Simpleboy786)💜
-        ❍ 🧡[Updates](https://t.me/Shasa_News)🧡
-        ❍ 🤍[Suppσrt](https://t.me/joinchat/P8HIdXOL8V9iNjRh)🤍
-        ❍ 💚[LionZUb](https://t.me/LionXSupport)💚
-        ❍ ❤️[ChatGrp](https://t.me/TotalNadaniya)❤️
-        ✨[Vc Player Help](https://telegra.ph/Shasa-Music-08-15)✨""",
+            text="""ℹ️ ι'м *𝔾𝕆𝔻𝔽𝔸𝕋ℍ𝔼ℝ*, α ρσωєяfυℓ gяσυρ мαиαgємєит вσт вυιℓт тσ нєℓρ уσυ мαиαgє уσυя gяσυρ єαѕιℓу.
+        ❍ 💜[Owner](https://t.me/Godfatherakki)💜
+        ❍ 🧡[Updates](https://t.me/The_godfather_network)🧡
+        ❍ 🤍[Suppσrt](https://t.me/godfathersupport)🤍
+        ❍ ❤️[ChatGrp](https://t.me/international_hindi_chatting)❤️"""
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -447,7 +445,7 @@ def shasa_callback_data(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@Shasa_RoBot` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@tgn_ro_bot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -516,14 +514,15 @@ def shasa_callback_data(update, context):
         )
     elif query.data == "shasa_support":
         query.message.edit_text(
-            text="* Shasa support chats*" "\nJoin Support Group/Channel",
+            text="* GODFATHER support chats*" "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/Shasa_News"),
+                        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", url="t.me/the_godfather_network"),
                         InlineKeyboardButton(
-                            text="ᴠᴄ ʜᴇʟᴘ", url="https://telegra.ph/Shasa-Music-08-15"
+                            text="ᴠᴄ ʜᴇʟᴘ", url="https://telegra.ph/%F0%9D%90%82%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%9A%F0%9D%90%A7%F0%9D%90%9D%F0%9D%90%AC-%F0%9D%90%85%F0%9D%90%A8%F0%9D%90%AB-%F0%9D%90%80%F0%9D%90%A5%F0%9D%90%A5-%F0%9D%90%94%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%AC-03-08"
+
                         ),
                     ],
                     [
@@ -531,7 +530,7 @@ def shasa_callback_data(update, context):
                             text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/LionXupdates"
+                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/the_godfather_network"
                         ),
                     ],
                     [
@@ -544,23 +543,23 @@ def shasa_callback_data(update, context):
         )
     elif query.data == "shasa_credit":
         query.message.edit_text(
-            text=f"<b> SHASA DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Shasa RoBot",
+            text=f"<b> GODFATHER DEV'S'S</b>\n"
+            f"\nHere Some Developers Helping in Making The Godfather RoBot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴅᴇᴠ", url="t.me/simpleboy786"),
+                        InlineKeyboardButton(text="ᴅᴇᴠ", url="t.me/Timesisnotwaiting"),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ", url="https://github.com/MdNoor786"
+                            text="ɢɪᴛʜᴜʙ", url="https://github.com/ITZ-ZAID"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴅᴇᴠ²", url="https://t.me/Copyless786"
+                            text="ᴅᴇᴠ²", url="https://t.me/Shubhanshutya"
                         ),
                         InlineKeyboardButton(
-                            text="ʀᴇᴅʟɪᴏɴ", url="https://t.me/Shasa_News/12"
+                            text="ʀᴇᴅʟɪᴏɴ", url="https://t.me/GodfatherSupport/184881"
                         ),
                     ],
                     [
@@ -792,7 +791,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1902787452 and DONATION_LINK:
+        if OWNER_ID != 936481432 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
