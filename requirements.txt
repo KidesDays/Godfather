@@ -34,8 +34,8 @@ youtube_dl==2021.6.6
 youtube_search
 pytube==11.0.1
 youtube_search_python==1.4.9
-pymongo==4.0.2
-motor>=2.1.0,<2.6.0
+pymongo
+motor
 dnspython==2.1.0
 redis==3.5.3
 gtts==2.2.3
