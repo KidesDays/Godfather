@@ -5,7 +5,8 @@ cachetools==4.2.2
 CurrencyConverter
 emoji==1.6.3
 feedparser==6.0.8
-googletrans==4.0.0-rc1
+googletrans==4.0.0rc1
+google-trans-new
 pyrate-limiter==2.4.7
 lxml==4.8.0
 nltk==3.7
@@ -30,9 +31,9 @@ nekos.py==1.0.3
 telegraph==2.1.0
 tgcrypto==1.2.2
 youtube_dl==2021.6.6
-youtube_search==2.1.0
+youtube_search
 pytube==11.0.1
-youtube_search_python==1.6.2
+youtube_search_python==1.4.9
 pymongo==4.0.2
 motor>=2.1.0,<2.6.0
 dnspython==2.1.0
